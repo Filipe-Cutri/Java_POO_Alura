@@ -15,5 +15,6 @@ public class Principal {
         System.out.println(meuFilme.somaDasAvaliacoes);
         System.out.println(meuFilme.totalDeAvaliacoes);
         System.out.println(meuFilme.retornarMedia());
+        System.out.println("Teste de commit");
     }
 }
