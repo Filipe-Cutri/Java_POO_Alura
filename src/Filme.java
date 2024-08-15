@@ -16,6 +16,7 @@ public class Filme {
         totalDeAvaliacoes++;
     }
 
+
     double retornarMedia(){
         return somaDasAvaliacoes / totalDeAvaliacoes;
     }
