@@ -1,4 +1,4 @@
-package Ex_04;
+package Aula01.Ex_04;
 
 public class Carro {
     String modelo;

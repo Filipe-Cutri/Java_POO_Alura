@@ -1,4 +1,4 @@
-package Ex_02;
+package Aula01.Ex_02;
 
 public class Calculadora {
     public static void main(String[] args) {

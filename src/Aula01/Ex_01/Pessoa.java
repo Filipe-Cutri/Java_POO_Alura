@@ -1,6 +1,4 @@
-package Ex_01;
-
-import Ex_01.Mensagem;
+package Aula01.Ex_01;
 
 public class Pessoa {
     public static void main(String[] args) {

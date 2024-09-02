@@ -1,4 +1,4 @@
-package Ex_01;
+package Aula01.Ex_01;
 
 public class Mensagem {
     void saudacao() {

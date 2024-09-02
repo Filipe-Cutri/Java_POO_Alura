@@ -1,4 +1,4 @@
-package Ex_03;
+package Aula01.Ex_03;
 
 public class Musica {
     // titulo, artista, anoLancamento, avaliacao e numAvaliacoes
