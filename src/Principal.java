@@ -1,4 +1,5 @@
 import filmora.modelos.Filme;
+import filmora.modelos.Serie;
 
 public class Principal {
     public static void main(String[] args) {
@@ -15,5 +16,17 @@ public class Principal {
         meuFilme.avalia(10);
 
         System.out.println("Média das avaliações: " + meuFilme.retornarMedia());
+
+        System.out.println();
+
+        Serie serie = new Serie();
+        serie.setNome("Breaking Bad");
+        serie.setAnoDeLancamento(2012);
+        serie.setIncluidoNoPlano(true);
+        serie.setTemporadas(5);
+        serie.setEpisodiosPorTemporada(25);
+        serie.setMinutosPorEpisodios(50);
+        serie.exibeFichaTecnica();
+        System.out.println("Quantidade em minutos para maratonar Breaking Bad: " + serie.getDuracaoEmMinutos() + " minutos");
     }
 }
