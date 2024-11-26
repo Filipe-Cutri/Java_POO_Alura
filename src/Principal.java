@@ -1,4 +1,6 @@
 import filmora.calculos.CalculadoraDeTempo;
+import filmora.calculos.FiltroRecomendacao;
+import filmora.modelos.Episodio;
 import filmora.modelos.Filme;
 import filmora.modelos.Serie;
 
@@ -9,16 +11,14 @@ public class Principal {
         meuFilme.setNome("O poderoso chefão");
         meuFilme.setAnoDeLancamento(1970);
         meuFilme.setDuracaoEmMinutos(180);
-        meuFilme.setIncluidoNoPlano(true);
+        System.out.println("Duração do filme: " + meuFilme.getDuracaoEmMinutos());
 
         meuFilme.exibeFichaTecnica();
         meuFilme.avalia(8);
         meuFilme.avalia(5);
         meuFilme.avalia(10);
-
-        System.out.println("Média das avaliações: " + meuFilme.retornarMedia());
-
-        System.out.println();
+        System.out.println("Total de avaliações: " + meuFilme.getTotalDeAvaliacoes());
+        System.out.println(meuFilme.retornarMedia());
 
         Serie serie = new Serie();
         serie.setNome("Breaking Bad");
@@ -41,5 +41,14 @@ public class Principal {
         calculadoraDeTempo.inclui(outroFilme);
         calculadoraDeTempo.inclui(serie);
         System.out.println(calculadoraDeTempo.getTempoTotal());
+
+        FiltroRecomendacao filtro = new FiltroRecomendacao();
+        filtro.filtra(meuFilme);
+
+        Episodio episodio = new Episodio();
+        episodio.setNumero(1);
+        episodio.setSerie(serie);
+        episodio.setTotalVisualizacoes(300);
+        filtro.filtra(episodio);
     }
 }

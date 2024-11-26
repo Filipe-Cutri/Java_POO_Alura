@@ -20,7 +20,6 @@ public class Titulo {
         totalDeAvaliacoes++;
     }
 
-
     public double retornarMedia(){
         return somaDasAvaliacoes / totalDeAvaliacoes;
     }
