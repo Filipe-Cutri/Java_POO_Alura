@@ -41,5 +41,4 @@ Se desejar contribuir, sinta-se à vontade para abrir um pull request ou relatar
 [Filipe Cutri](https://github.com/Filipe-Cutri)
 
 ---
-Este repositório faz parte do meu aprendizado em Java e POO. Qualquer feedback é bem-vindo!
 
